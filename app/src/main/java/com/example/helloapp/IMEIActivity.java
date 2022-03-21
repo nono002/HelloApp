@@ -20,7 +20,7 @@ import android.widget.TextView;
 import android.provider.Settings;
 import android.provider.Settings.System;
 
-public class IMEIActivity extends Activity implements OnClickListener {
+public class IMEIActivity extends AppCompatActivity implements OnClickListener {
 
     Button btnActIMEI;
     TextView textView;
