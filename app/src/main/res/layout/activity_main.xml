@@ -10,15 +10,21 @@
         android:text="@string/hello">
     </TextView>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Go to Activity Two"
         android:id="@+id/btnActTwo">
     </Button>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Go to FTP Activity"
         android:id="@+id/btnActFTP">
+    </Button>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to IMEI Activity"
+        android:id="@+id/btnActIMEI">
     </Button>
 </LinearLayout>

@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     Button btnActTwo;
     Button btnActFTP;
+    Button btnActIMEI;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         btnActFTP = (Button) findViewById(R.id.btnActFTP);
         btnActFTP.setOnClickListener(this);
+
+        btnActIMEI = (Button) findViewById(R.id.btnActIMEI);
+        btnActIMEI.setOnClickListener(this);
 
         Log.d(TAG, "MainActivity: onCreate()");
     }
@@ -110,6 +114,11 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.btnActFTP:
                 // кнопка Cancel
                 intent = new Intent(this, FTPActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btnActIMEI:
+                // кнопка Cancel
+                intent = new Intent(this, IMEIActivity.class);
                 startActivity(intent);
                 break;
         }
